@@ -2,23 +2,29 @@ Lucrative method to run a discord bot using the sillytavern platform. While I am
 
 To operate you need to have the following:
 
-  Python (Version used = 3.10.14) *I don't think your version would affect this much*
+  **Python** (Version used = 3.10.14) 
+  _*I don't think your version would affect this much*_
+  
   I can't remember exactly what packages I installed as I used the same enviorment for another project :). Definitly Selenium and Discord.py (Would reccomend conda enviorment if your familiar) 
+  
     1. pip install selenium
     2. pip install discord.py
 
-  Webdriver
+ **Webdriver**
+  
   I used Edge (https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver?form=MA13LH), I can not remember the exact version so I included the driver files in the repository. Just make 
   to change your file path to it accordingly on line 11
   
-  Sillytavern 
+  **Sillytavern**
+    
     1. Sillytavern character created: In the code you will need to edit Line 25 with the name of this character for it to be selected properly 
     2. A generation API:  I used koboldcpp and ran locally using my own GPU howver you can use any of the supported API's.
     3. Personas (optional): Line 123 - 140 of the code have the webdriver type "/persona PERSONANAME" before each message. If your operating a bot for a small user group it may be   
        beneficial to create a persona in sillytavern for each user as the bot will be able to attach a name to the user as well as persona descriptions can include info on each user for the bot to        reference. You will need to apply the correct User Id to each persona in the code. Line 138 - 140 contains the exception if a user is not found. I madea a persona for a unknown speaker     
        however I think the code would still work fine without a "Unknown speaker" persona made. 
 
-  Discord Bot
+  **Discord Bot**
+  
     1. You need to create a discord bot (https://discord.com/developers/docs/quick-start/getting-started)
     2. Bot needs to added to your discord server and ensure it has the permission to read, and send messages. Additionally it will need to have proper channel permissions.
 
