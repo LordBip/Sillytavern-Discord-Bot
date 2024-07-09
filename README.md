@@ -1,4 +1,6 @@
-Lucrative method to run a discord bot using the sillytavern platform. While I am certain alternative methods may be easier to implement I figure this would be a simple bootlegged solution for those fixated on achieving this. It uses a webdriver (selenium in this case) to navigate to your sillytavern instance and interact with the page. I dont see too much in the way of expansion for this project as its essentially automating page usage with the webdriver handling everything.
+![For git](https://github.com/LordBip/Sillytavern-Discord-Bot/assets/171779948/e0091658-2238-4011-bbd2-3c3fd89e9221)
+
+Lucrative method to run a discord bot using the sillytavern platform (https://sillytavernai.com // https://github.com/SillyTavern/SillyTavern) . While I am certain alternative methods may be easier to implement I figure this would be a simple bootlegged solution for those fixated on achieving this. It uses a webdriver (selenium in this case) to navigate to your sillytavern instance and interact with the page. I dont see too much in the way of expansion for this project as its essentially automating page usage with the webdriver handling everything.
 
 To operate you need to have the following:
 
