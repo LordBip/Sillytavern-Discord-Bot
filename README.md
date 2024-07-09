@@ -30,9 +30,18 @@ To operate you need to have the following:
     1. You need to create a discord bot (https://discord.com/developers/docs/quick-start/getting-started)
     2. Bot needs to added to your discord server and ensure it has the permission to read, and send messages. Additionally it will need to have proper channel permissions.
 
+**Before you run**
+
+    1. Change all instances of ('ch_name') == "CEO Joe" to reference your character name (Instance of this found on line 96 but you may wanna CTRL-F and replace all).
+    2. Add in the appropriate channel id for all instance of "YOUR CHANNEL ID" (no "" surrounding the id when adding)
+    3. At the bottom of the code use your own Bot Token ID
+    4. If you don't care about persona recognition then create a persona in sillytavern named "Unknown Person" (no description needed)
+    5. You will see "time.sleep(2)" throughout some of the functions. If your pc is slower, you may need to increase the time in the parenthesis to give the code a longer pause (in seconds)
+    6. There are two instance of timeout = 60 (Line 55 , and 83) this is how long the script polls for a AI response on tavern. If using a bigger model then raise this time to account for longer load times.
+    
 Notes:
 
-Code is designed to only have the bot interact with messages recieved in a specified channel. You can set the channel id to one you create for the bot, or you can remove the channel id checks (not overall reccommended) to have the bot react with all messages.
+Code is designed to only have the bot interact with messages recieved in a specified channel. You can set the channel id to one you create for the bot, or you can remove the channel id checks (not overall reccommended) to have the bot react with all messages in the entire server where it has visibility permisions.
 
 Code does not handle a user sending back to back messages well, it can lead to a response being skipped, or other "bugs". Best practice is to wait for a response before sending another message.
 
